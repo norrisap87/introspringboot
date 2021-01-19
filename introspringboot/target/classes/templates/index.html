@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+    </style>
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+</head>
+<body>
+
+
+
+<h1> Alison P. Norris</h1>
+    <div>
+
+        <img th:src="@{/images/selfie.png}" alt="image" width="300" height="350" align="center">
+    </div>
+    <div>
+        <h3> To learn more about me, check out my resume.</h3>
+        <a href="resume.html" class="myButton">Resume</a>
+
+    </div>
+
+<div>
+    <br>
+    <h2> Please assess the quality of your experience.</h2>
+    <form>
+        <input type="checkbox" id="feelings1" name="feelings1" value="Great">
+        <label for="feelings1"> This is great! I am very pleased.</label><br>
+        <input type="checkbox" id="feelings2" name="feelings2" value="Mediocre">
+        <label for="feelings2"> This is mediocre. I would not recommend for others. </label><br>
+        <input type="checkbox" id="feelings3" name="feelings3" value="Abysmal Lost Cause">
+        <label for="feelings3"> The most abysmal experience. 0/10.</label>
+    </form>
+    <br>
+    <a href="survey.html" class="myButton">Submit Feedback</a>
+</div>
+</body>
+</html>
